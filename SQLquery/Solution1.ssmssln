@@ -1,11 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# SQL Server Management Studio Solution File, Format Version 11.00
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		По умолчанию|Default = По умолчанию|Default
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{00000000-0000-0000-0000-000000000000}.По умолчанию|Default.ActiveCfg = По умолчанию
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

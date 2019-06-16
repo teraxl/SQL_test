@@ -3,9 +3,9 @@ GO
 
 /****** Object:  Database [catridge_accounting]    Script Date: 06/17/2019 00:55:24 ******/
 CREATE DATABASE [catridge_accounting] ON  PRIMARY 
-( NAME = N'catridge_accounting', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL10_50.SQLEXPRESS\MSSQL\DATA\catridge_accounting.mdf' , SIZE = 2304KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+( NAME = N'catridge_accounting', FILENAME = N'D:\_DEVELOPER_\_PROJECTs_\_GITHUB_\SQL_test\db\catridge_accounting.mdf' , SIZE = 2304KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
  LOG ON 
-( NAME = N'catridge_accounting_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL10_50.SQLEXPRESS\MSSQL\DATA\catridge_accounting_log.LDF' , SIZE = 832KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+( NAME = N'catridge_accounting_log', FILENAME = N'D:\_DEVELOPER_\_PROJECTs_\_GITHUB_\SQL_test\db\catridge_accounting_log.LDF' , SIZE = 832KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
 GO
 
 ALTER DATABASE [catridge_accounting] SET COMPATIBILITY_LEVEL = 100
