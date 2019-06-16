@@ -17,4 +17,4 @@ dbo.catridge.number_of_repairs
 FROM dbo.catridge 
 INNER JOIN dbo.client 
 ON dbo.catridge.id_client = dbo.client.id
-where client.name_client = 'Титан'
+/*where client.name_client = 'Титан'*/
