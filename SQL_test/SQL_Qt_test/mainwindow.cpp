@@ -16,6 +16,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::writeSettings()
+{
+
+}
+
 void MainWindow::on_actionConnect_Database_triggered()
 {
     login = new Login();

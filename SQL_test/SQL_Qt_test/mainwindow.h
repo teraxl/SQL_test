@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "login.h"
 #include "ui_login.h"
+#include <QSettings>
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +18,10 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+public:
+    void readSettings();
+    void writeSettings();
+
 private slots:
     void on_actionConnect_Database_triggered();
 
@@ -25,6 +30,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Login *login;
+    QSettings m_settings;
 
 };
 
