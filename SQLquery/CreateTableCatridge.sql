@@ -14,6 +14,7 @@ create table [dbo].[catridge]
 	[rtl_id] [nvarchar](30) not null,
 	[model] [nvarchar](30) not null,
 	[sn] [nvarchar](100) null,
+	/*[data_priema] [data] not null,*/
 	[work_performed] [nvarchar](200) not null,
 	[complaints] [nvarchar](200) not null,
 	[comments] [nvarchar](200),
