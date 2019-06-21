@@ -13,35 +13,12 @@ create table [dbo].[catridge]
 	[id_client] [int] not null,
 	[rtl_id] [nvarchar](30) not null,
 	[model] [nvarchar](30) not null,
-	[sn] [nvarchar](100) null,
-	/*[data_priema] [data] not null,*/
-	[work_performed] [nvarchar](200) not null,
-	[complaints] [nvarchar](200) not null,
-	[comments] [nvarchar](200),
-	[returns] [bit] not null,
-	[doc_is_ready] [bit] not null,
-	[number_of_repairs] [int] not null
+	[sn] [nvarchar](100)
 )
 go
 
 alter table [dbo].[catridge]
-add constraint [DF_catridge_sn] default ('Отсутствует') for [sn]
-go
-
-alter table [dbo].[catridge]
-add constraint [DF_catridge_[complaints] default ('Нет') for [complaints]
-go
-
-alter table [dbo].[catridge]
-add constraint [DF_catridge_returns] default ((0)) for [returns]
-go
-
-alter table [dbo].[catridge]
-add constraint [DF_catridge_doc_is_ready] default ((0)) for [doc_is_ready]
-go
-
-alter table [dbo].[catridge]
-add constraint [DF_catridge_number_of_repairs] default ((1)) for [number_of_repairs]
+add constraint [DF_catridge_sn] default ('Серийный номер отсутствует') for [sn]
 go
 
 alter table [dbo].[catridge]

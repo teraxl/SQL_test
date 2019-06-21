@@ -9,10 +9,14 @@ go
 
 create table [dbo].[remont]
 (
-	[id] [int] identity(1,1) not null,
-	[id_catridge][int] not null,
-	[remont] [nvarchar](200) not null,
-	[data_remonta] [date] not null
+	[id]						[int]	identity(1,1)	not null,
+	[id_catridge]				[int]					not null,
+	[vipolnennie_raboti]		[nvarchar](300)			not null,
+	[zhalobi_so_slov_clienta]	[nvarchar](300)			not null,
+	[komentarii]				[nvarchar](300)			null,
+	[data_remonta]				[date]					not null,
+	[data_vozvrata]				[date]					not null,
+	[doc_is_ready]				[bit]					not null
 )
 go
 
