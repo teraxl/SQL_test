@@ -1,6 +1,30 @@
 use [catridge_accounting]
 go
 
+declare @@decl nvarchar(10)
+set @@decl = 'TITAN'
+
+if (@@decl = 'TITAN')
+	insert into client (name_client)
+	values ('ATOL')
+else
+	insert into client (name_client)
+	values ('ATOLS')
+select name_client from client
+
+/*
+insert into [dbo].[client] (name_client)
+values ('value')
+
+insert into [dbo].[client] (name_client)
+values ('value')
+
+declare @@sdfsdfd int
+set @@sdfsdfd = error_message()
+
+select @@sdfsdfd
+go
+
 insert into [dbo].[client]
 ([name_client])
 values
@@ -42,5 +66,5 @@ values
     ,(1)
     ,(4))
 go
-
+*/
 
