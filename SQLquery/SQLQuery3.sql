@@ -2,7 +2,7 @@ use [catridge_accounting]
 go
 
 declare @@decl nvarchar(10)
-set @@decl = 'TITAN'
+set @@decl = (select name_client from client)
 
 if (@@decl = 'TITAN')
 	insert into client (name_client)
@@ -11,6 +11,8 @@ else
 	insert into client (name_client)
 	values ('ATOLS')
 select name_client from client
+
+delete from client where id = 
 
 /*
 insert into [dbo].[client] (name_client)
