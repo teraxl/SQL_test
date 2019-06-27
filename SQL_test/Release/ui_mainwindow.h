@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.1
+** Created by: Qt User Interface Compiler version 5.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -12,10 +12,13 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -26,7 +29,9 @@ class Ui_MainWindow
 public:
     QAction *actionConnect_Database;
     QAction *actionExit;
+    QAction *actionShowWorkSheet;
     QWidget *centralWidget;
+    QTableView *tableView;
     QMenuBar *menuBar;
     QMenu *menuMenu;
     QToolBar *mainToolBar;
@@ -35,30 +40,36 @@ public:
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(622, 467);
+            MainWindow->setObjectName(QStringLiteral("MainWindow"));
+        MainWindow->resize(856, 639);
         actionConnect_Database = new QAction(MainWindow);
-        actionConnect_Database->setObjectName(QString::fromUtf8("actionConnect_Database"));
+        actionConnect_Database->setObjectName(QStringLiteral("actionConnect_Database"));
         actionExit = new QAction(MainWindow);
-        actionExit->setObjectName(QString::fromUtf8("actionExit"));
+        actionExit->setObjectName(QStringLiteral("actionExit"));
+        actionShowWorkSheet = new QAction(MainWindow);
+        actionShowWorkSheet->setObjectName(QStringLiteral("actionShowWorkSheet"));
         centralWidget = new QWidget(MainWindow);
-        centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        tableView = new QTableView(centralWidget);
+        tableView->setObjectName(QStringLiteral("tableView"));
+        tableView->setGeometry(QRect(20, 330, 821, 251));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 622, 20));
+        menuBar->setObjectName(QStringLiteral("menuBar"));
+        menuBar->setGeometry(QRect(0, 0, 856, 20));
         menuMenu = new QMenu(menuBar);
-        menuMenu->setObjectName(QString::fromUtf8("menuMenu"));
+        menuMenu->setObjectName(QStringLiteral("menuMenu"));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
-        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
+        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QString::fromUtf8("statusBar"));
+        statusBar->setObjectName(QStringLiteral("statusBar"));
         MainWindow->setStatusBar(statusBar);
 
         menuBar->addAction(menuMenu->menuAction());
         menuMenu->addAction(actionConnect_Database);
+        menuMenu->addAction(actionShowWorkSheet);
         menuMenu->addAction(actionExit);
 
         retranslateUi(MainWindow);
@@ -68,10 +79,11 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        actionConnect_Database->setText(QApplication::translate("MainWindow", "Connect Database", nullptr));
-        actionExit->setText(QApplication::translate("MainWindow", "Exit", nullptr));
-        menuMenu->setTitle(QApplication::translate("MainWindow", "Menu", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
+        actionConnect_Database->setText(QApplication::translate("MainWindow", "Connect Database", 0));
+        actionExit->setText(QApplication::translate("MainWindow", "Exit", 0));
+        actionShowWorkSheet->setText(QApplication::translate("MainWindow", "ShowWorkSheet", 0));
+        menuMenu->setTitle(QApplication::translate("MainWindow", "Menu", 0));
     } // retranslateUi
 
 };

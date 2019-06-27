@@ -39,6 +39,7 @@
      <string>Menu</string>
     </property>
     <addaction name="actionConnect_Database"/>
+    <addaction name="actionShowWorkSheet"/>
     <addaction name="actionExit"/>
    </widget>
    <addaction name="menuMenu"/>
@@ -60,6 +61,11 @@
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionShowWorkSheet">
+   <property name="text">
+    <string>ShowWorkSheet</string>
    </property>
   </action>
  </widget>
