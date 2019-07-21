@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-include(E:\_DEVELOPER_\Github\QtXlsxWriter\src\xlsx\qtxlsx.pri)
+#include(E:\_DEVELOPER_\Github\QtXlsxWriter\src\xlsx\qtxlsx.pri)
 
 QT += core gui sql axcontainer widgets
 
@@ -21,15 +21,18 @@ CONFIG += c++14
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    login.cpp
+    login.cpp \
+    w_add_values.cpp
 
 HEADERS += \
         mainwindow.h \
-    login.h
+    login.h \
+    w_add_values.h
 
 FORMS += \
         mainwindow.ui \
-    login.ui
+    login.ui \
+    w_add_values.ui
 
 #Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -38,11 +41,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DESTDIR = ..\..\..\..\QtXLSDebug
 win32:QMAKE_POST_LINK += windeployqt --release $$OUT_PWD/$$DESTDIR
-
-#LIBS += -L$$PWD/../../../../SQL_test/xlnt/lib/ -llibxl
-LIBS += C:/Users/mugaa/Downloads/libxl/libxl.dll
-
-INCLUDEPATH += $$PWD/../../../../SQL_test/xlnt/include
-DEPENDPATH += $$PWD/../../../../SQL_test/xlnt/include
 
 

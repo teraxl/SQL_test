@@ -1,3 +1,4 @@
+//#include "xlsxdocument.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QCheckBox>
@@ -6,21 +7,24 @@
 #include <QDebug>
 #include <QFile>
 #include <QDir>
-#include <libxl.h>
-#include "xlsxdocument.h"
-
-using namespace libxl;
+#include <QStandardItemModel>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setWindowFlags(Qt::Window |
+                         Qt::WindowCloseButtonHint |
+                         Qt::WindowMinimizeButtonHint);
+    this->setFixedSize(this->geometry().size());
+    w_add_v = new w_add_values();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete w_add_v;
 }
 
 void MainWindow::writeSettings()
@@ -41,7 +45,10 @@ void MainWindow::on_actionExit_triggered()
 
 void MainWindow::on_actionShowWorkSheet_triggered()
 {
-    QXlsx::Document xlsx;
-    xlsx.write("A1", "Hello Qt!");
-    xlsx.saveAs("Test.xlsx");
+
+}
+
+void MainWindow::on_btn_add_value_clicked()
+{
+    w_add_v->show();
 }

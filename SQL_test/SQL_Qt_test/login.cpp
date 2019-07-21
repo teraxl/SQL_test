@@ -6,6 +6,11 @@ Login::Login(QWidget *parent) :
     ui(new Ui::Login)
 {
     ui->setupUi(this);
+    this->setWindowFlags(Qt::Window | Qt::WindowCloseButtonHint);
+    this->setFixedSize(this->geometry().size());
+    this->setWindowTitle("Подключение к базе данных");
+    this->setWindowModality(Qt::ApplicationModal);
+    this->activateWindow();
     ui->lineEdit_4->setEchoMode(QLineEdit::Password);
     mes = new QMessageBox();
 }
