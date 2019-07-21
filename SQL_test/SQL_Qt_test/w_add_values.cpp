@@ -17,3 +17,8 @@ w_add_values::~w_add_values()
 {
     delete ui;
 }
+
+void w_add_values::on_pushButton_clicked()
+{
+
+}
