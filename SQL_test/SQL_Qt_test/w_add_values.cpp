@@ -6,7 +6,8 @@ w_add_values::w_add_values(QWidget *parent) :
     ui(new Ui::w_add_values)
 {
     ui->setupUi(this);
-    this->setWindowFlags(Qt::Window | Qt::WindowCloseButtonHint);
+    this->setWindowFlags(Qt::Window | Qt::WindowCloseButtonHint );
+    this->setWindowIcon(QIcon(":/icons/icone.png"));
     this->setFixedSize(this->geometry().size());
     this->setWindowTitle("Добавление записей");
     this->setWindowModality(Qt::ApplicationModal);

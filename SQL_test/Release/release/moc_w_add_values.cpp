@@ -22,7 +22,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_w_add_values_t {
     QByteArrayData data[4];
-    char stringdata0[67];
+    char stringdata0[73];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,13 +32,13 @@ struct qt_meta_stringdata_w_add_values_t {
 static const qt_meta_stringdata_w_add_values_t qt_meta_stringdata_w_add_values = {
     {
 QT_MOC_LITERAL(0, 0, 12), // "w_add_values"
-QT_MOC_LITERAL(1, 13, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(2, 35, 0), // ""
-QT_MOC_LITERAL(3, 36, 30) // "on_btn_add_update_data_clicked"
+QT_MOC_LITERAL(1, 13, 27), // "on_btn_add_new_data_clicked"
+QT_MOC_LITERAL(2, 41, 0), // ""
+QT_MOC_LITERAL(3, 42, 30) // "on_btn_add_update_data_clicked"
 
     },
-    "w_add_values\0on_pushButton_clicked\0\0"
-    "on_btn_add_update_data_clicked"
+    "w_add_values\0on_btn_add_new_data_clicked\0"
+    "\0on_btn_add_update_data_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -72,7 +72,7 @@ void w_add_values::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         auto *_t = static_cast<w_add_values *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_pushButton_clicked(); break;
+        case 0: _t->on_btn_add_new_data_clicked(); break;
         case 1: _t->on_btn_add_update_data_clicked(); break;
         default: ;
         }

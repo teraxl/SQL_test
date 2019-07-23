@@ -7,7 +7,7 @@
 #include(E:\_DEVELOPER_\Github\QtXlsxWriter\src\xlsx\qtxlsx.pri)
 
 QT += core gui sql axcontainer widgets
-
+ICON = ":/icons/1024x1024bb.png"
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = SQL_Qt_test
@@ -44,4 +44,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DESTDIR = ..\..\..\..\QtXLSDebug
 win32:QMAKE_POST_LINK += windeployqt --release $$OUT_PWD/$$DESTDIR
 
-
+RESOURCES += \
+    resorces.qrc

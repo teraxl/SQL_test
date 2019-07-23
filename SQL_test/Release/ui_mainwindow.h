@@ -43,7 +43,7 @@ public:
     QGroupBox *groupBox;
     QPushButton *btn_add_value;
     QPushButton *btn_edit_values;
-    QWidget *layoutWidget;
+    QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_5;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
@@ -68,7 +68,7 @@ public:
     QVBoxLayout *verticalLayout_4;
     QLabel *label_10;
     QLabel *l_zhalobi;
-    QWidget *layoutWidget1;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_6;
     QLabel *l_sostoyanie_doc;
     QLabel *label_9;
@@ -100,19 +100,24 @@ public:
         treeView = new QTreeView(centralWidget);
         treeView->setObjectName(QString::fromUtf8("treeView"));
         treeView->setGeometry(QRect(10, 10, 191, 491));
+        treeView->setFrameShape(QFrame::WinPanel);
+        treeView->setFrameShadow(QFrame::Plain);
         groupBox = new QGroupBox(centralWidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
         groupBox->setGeometry(QRect(210, 10, 891, 491));
+        groupBox->setAutoFillBackground(false);
+        groupBox->setFlat(false);
+        groupBox->setCheckable(false);
         btn_add_value = new QPushButton(groupBox);
         btn_add_value->setObjectName(QString::fromUtf8("btn_add_value"));
         btn_add_value->setGeometry(QRect(20, 460, 121, 21));
         btn_edit_values = new QPushButton(groupBox);
         btn_edit_values->setObjectName(QString::fromUtf8("btn_edit_values"));
         btn_edit_values->setGeometry(QRect(149, 460, 141, 21));
-        layoutWidget = new QWidget(groupBox);
-        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(20, 40, 711, 371));
-        verticalLayout_5 = new QVBoxLayout(layoutWidget);
+        layoutWidget1 = new QWidget(groupBox);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(20, 40, 711, 371));
+        verticalLayout_5 = new QVBoxLayout(layoutWidget1);
         verticalLayout_5->setSpacing(6);
         verticalLayout_5->setContentsMargins(11, 11, 11, 11);
         verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
@@ -123,45 +128,45 @@ public:
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        label = new QLabel(layoutWidget);
+        label = new QLabel(layoutWidget1);
         label->setObjectName(QString::fromUtf8("label"));
 
         verticalLayout->addWidget(label);
 
-        l_name_organization = new QLabel(layoutWidget);
+        l_name_organization = new QLabel(layoutWidget1);
         l_name_organization->setObjectName(QString::fromUtf8("l_name_organization"));
         l_name_organization->setFrameShape(QFrame::Box);
 
         verticalLayout->addWidget(l_name_organization);
 
-        label_4 = new QLabel(layoutWidget);
+        label_4 = new QLabel(layoutWidget1);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
         verticalLayout->addWidget(label_4);
 
-        l_id = new QLabel(layoutWidget);
+        l_id = new QLabel(layoutWidget1);
         l_id->setObjectName(QString::fromUtf8("l_id"));
         l_id->setFrameShape(QFrame::Box);
 
         verticalLayout->addWidget(l_id);
 
-        label_2 = new QLabel(layoutWidget);
+        label_2 = new QLabel(layoutWidget1);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         verticalLayout->addWidget(label_2);
 
-        l_model_catridga = new QLabel(layoutWidget);
+        l_model_catridga = new QLabel(layoutWidget1);
         l_model_catridga->setObjectName(QString::fromUtf8("l_model_catridga"));
         l_model_catridga->setFrameShape(QFrame::Box);
 
         verticalLayout->addWidget(l_model_catridga);
 
-        label_3 = new QLabel(layoutWidget);
+        label_3 = new QLabel(layoutWidget1);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
         verticalLayout->addWidget(label_3);
 
-        l_sn = new QLabel(layoutWidget);
+        l_sn = new QLabel(layoutWidget1);
         l_sn->setObjectName(QString::fromUtf8("l_sn"));
         l_sn->setFrameShape(QFrame::Box);
 
@@ -173,25 +178,25 @@ public:
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setSpacing(6);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        label_5 = new QLabel(layoutWidget);
+        label_5 = new QLabel(layoutWidget1);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setMaximumSize(QSize(16777215, 20));
 
         verticalLayout_2->addWidget(label_5);
 
-        l_vipolnennie_raboti = new QLabel(layoutWidget);
+        l_vipolnennie_raboti = new QLabel(layoutWidget1);
         l_vipolnennie_raboti->setObjectName(QString::fromUtf8("l_vipolnennie_raboti"));
         l_vipolnennie_raboti->setFrameShape(QFrame::Box);
 
         verticalLayout_2->addWidget(l_vipolnennie_raboti);
 
-        label_6 = new QLabel(layoutWidget);
+        label_6 = new QLabel(layoutWidget1);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setMaximumSize(QSize(16777215, 20));
 
         verticalLayout_2->addWidget(label_6);
 
-        l_comment = new QLabel(layoutWidget);
+        l_comment = new QLabel(layoutWidget1);
         l_comment->setObjectName(QString::fromUtf8("l_comment"));
         l_comment->setFrameShape(QFrame::Box);
 
@@ -203,25 +208,25 @@ public:
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setSpacing(6);
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        label_7 = new QLabel(layoutWidget);
+        label_7 = new QLabel(layoutWidget1);
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setMaximumSize(QSize(16777215, 20));
 
         verticalLayout_3->addWidget(label_7);
 
-        l_data_remonta = new QLabel(layoutWidget);
+        l_data_remonta = new QLabel(layoutWidget1);
         l_data_remonta->setObjectName(QString::fromUtf8("l_data_remonta"));
         l_data_remonta->setFrameShape(QFrame::Box);
 
         verticalLayout_3->addWidget(l_data_remonta);
 
-        label_8 = new QLabel(layoutWidget);
+        label_8 = new QLabel(layoutWidget1);
         label_8->setObjectName(QString::fromUtf8("label_8"));
         label_8->setMaximumSize(QSize(16777215, 20));
 
         verticalLayout_3->addWidget(label_8);
 
-        l_data_vozvrata = new QLabel(layoutWidget);
+        l_data_vozvrata = new QLabel(layoutWidget1);
         l_data_vozvrata->setObjectName(QString::fromUtf8("l_data_vozvrata"));
         l_data_vozvrata->setFrameShape(QFrame::Box);
 
@@ -236,13 +241,13 @@ public:
         verticalLayout_4 = new QVBoxLayout();
         verticalLayout_4->setSpacing(6);
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
-        label_10 = new QLabel(layoutWidget);
+        label_10 = new QLabel(layoutWidget1);
         label_10->setObjectName(QString::fromUtf8("label_10"));
         label_10->setMaximumSize(QSize(16777215, 20));
 
         verticalLayout_4->addWidget(label_10);
 
-        l_zhalobi = new QLabel(layoutWidget);
+        l_zhalobi = new QLabel(layoutWidget1);
         l_zhalobi->setObjectName(QString::fromUtf8("l_zhalobi"));
         l_zhalobi->setFrameShape(QFrame::Box);
 
@@ -251,15 +256,15 @@ public:
 
         verticalLayout_5->addLayout(verticalLayout_4);
 
-        layoutWidget1 = new QWidget(groupBox);
-        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(760, 40, 114, 371));
-        verticalLayout_6 = new QVBoxLayout(layoutWidget1);
+        layoutWidget = new QWidget(groupBox);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(760, 40, 114, 371));
+        verticalLayout_6 = new QVBoxLayout(layoutWidget);
         verticalLayout_6->setSpacing(6);
         verticalLayout_6->setContentsMargins(11, 11, 11, 11);
         verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
         verticalLayout_6->setContentsMargins(0, 0, 0, 0);
-        l_sostoyanie_doc = new QLabel(layoutWidget1);
+        l_sostoyanie_doc = new QLabel(layoutWidget);
         l_sostoyanie_doc->setObjectName(QString::fromUtf8("l_sostoyanie_doc"));
         l_sostoyanie_doc->setMinimumSize(QSize(100, 100));
         l_sostoyanie_doc->setMaximumSize(QSize(100, 100));
@@ -271,7 +276,7 @@ public:
 
         verticalLayout_6->addWidget(l_sostoyanie_doc);
 
-        label_9 = new QLabel(layoutWidget1);
+        label_9 = new QLabel(layoutWidget);
         label_9->setObjectName(QString::fromUtf8("label_9"));
         label_9->setMaximumSize(QSize(16777215, 20));
 
