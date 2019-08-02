@@ -7,7 +7,8 @@
 #include(E:\_DEVELOPER_\Github\QtXlsxWriter\src\xlsx\qtxlsx.pri)
 
 QT += core gui sql axcontainer widgets
-ICON = ":/icons/1024x1024bb.png"
+#ICON = ":/icons/1024x1024bb.png"
+RC_FILE = resource.rc
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = SQL_Qt_test
