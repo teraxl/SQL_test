@@ -53,6 +53,18 @@
          <height>21</height>
         </rect>
        </property>
+       <property name="text">
+        <string notr="true"/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
       </widget>
       <widget class="QLabel" name="label_2">
        <property name="geometry">
@@ -155,6 +167,9 @@
          <height>70</height>
         </rect>
        </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhMultiLine</set>
+       </property>
       </widget>
       <widget class="QLabel" name="label_6">
        <property name="geometry">
@@ -197,7 +212,7 @@
         <rect>
          <x>20</x>
          <y>360</y>
-         <width>91</width>
+         <width>111</width>
          <height>21</height>
         </rect>
        </property>
@@ -269,7 +284,7 @@
         <rect>
          <x>20</x>
          <y>360</y>
-         <width>101</width>
+         <width>121</width>
          <height>21</height>
         </rect>
        </property>
@@ -462,6 +477,27 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>txt_name_org</tabstop>
+  <tabstop>txt_model_catridge</tabstop>
+  <tabstop>txt_id_catridge</tabstop>
+  <tabstop>txt_sn</tabstop>
+  <tabstop>txt_vip_rabot</tabstop>
+  <tabstop>txt_zhalobi</tabstop>
+  <tabstop>txt_commentarii</tabstop>
+  <tabstop>data_remonta</tabstop>
+  <tabstop>btn_add_new_data</tabstop>
+  <tabstop>cb_name_org</tabstop>
+  <tabstop>btn_add_update_data</tabstop>
+  <tabstop>cb_le_id_catridge</tabstop>
+  <tabstop>le_id_catridge</tabstop>
+  <tabstop>update_txt_model_catridge</tabstop>
+  <tabstop>le_sn_catridge</tabstop>
+  <tabstop>update_data_remonta</tabstop>
+  <tabstop>update_txt_commentarii</tabstop>
+  <tabstop>update_txt_vip_rabot</tabstop>
+  <tabstop>update_txt_zhalobi</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

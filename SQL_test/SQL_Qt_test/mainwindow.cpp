@@ -42,7 +42,6 @@ MainWindow::MainWindow(QWidget *parent) :
         for (int nRow = 0; nRow < 4; ++nRow) {
             for (int nCol = 0; nCol < 3; ++nCol) {
                 QString strPos = QString("%1,%2").arg(nRow).arg(nCol);
-                qDebug() << "strPos ----> " << strPos;
                 model->setData(model->index(nRow, nCol, index), strPos);
             }
         }

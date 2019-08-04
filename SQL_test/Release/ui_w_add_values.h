@@ -84,6 +84,10 @@ public:
         txt_name_org = new QLineEdit(page);
         txt_name_org->setObjectName(QString::fromUtf8("txt_name_org"));
         txt_name_org->setGeometry(QRect(10, 30, 141, 21));
+        txt_name_org->setText(QString::fromUtf8(""));
+        txt_name_org->setFrame(true);
+        txt_name_org->setPlaceholderText(QString::fromUtf8(""));
+        txt_name_org->setClearButtonEnabled(true);
         label_2 = new QLabel(page);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(10, 60, 151, 16));
@@ -111,6 +115,7 @@ public:
         txt_commentarii = new QTextEdit(page);
         txt_commentarii->setObjectName(QString::fromUtf8("txt_commentarii"));
         txt_commentarii->setGeometry(QRect(180, 230, 431, 70));
+        txt_commentarii->setInputMethodHints(Qt::ImhMultiLine);
         label_6 = new QLabel(page);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(180, 210, 151, 16));
@@ -122,7 +127,7 @@ public:
         data_remonta->setGeometry(QRect(500, 360, 110, 22));
         btn_add_new_data = new QPushButton(page);
         btn_add_new_data->setObjectName(QString::fromUtf8("btn_add_new_data"));
-        btn_add_new_data->setGeometry(QRect(20, 360, 91, 21));
+        btn_add_new_data->setGeometry(QRect(20, 360, 111, 21));
         label_8 = new QLabel(page);
         label_8->setObjectName(QString::fromUtf8("label_8"));
         label_8->setGeometry(QRect(10, 160, 151, 16));
@@ -141,7 +146,7 @@ public:
         cb_name_org->setGeometry(QRect(10, 30, 141, 22));
         btn_add_update_data = new QPushButton(page_2);
         btn_add_update_data->setObjectName(QString::fromUtf8("btn_add_update_data"));
-        btn_add_update_data->setGeometry(QRect(20, 360, 101, 21));
+        btn_add_update_data->setGeometry(QRect(20, 360, 121, 21));
         label_10 = new QLabel(page_2);
         label_10->setObjectName(QString::fromUtf8("label_10"));
         label_10->setGeometry(QRect(10, 70, 141, 16));
@@ -194,6 +199,24 @@ public:
 
         gridLayout->addWidget(toolBox, 0, 0, 1, 1);
 
+        QWidget::setTabOrder(txt_name_org, txt_model_catridge);
+        QWidget::setTabOrder(txt_model_catridge, txt_id_catridge);
+        QWidget::setTabOrder(txt_id_catridge, txt_sn);
+        QWidget::setTabOrder(txt_sn, txt_vip_rabot);
+        QWidget::setTabOrder(txt_vip_rabot, txt_zhalobi);
+        QWidget::setTabOrder(txt_zhalobi, txt_commentarii);
+        QWidget::setTabOrder(txt_commentarii, data_remonta);
+        QWidget::setTabOrder(data_remonta, btn_add_new_data);
+        QWidget::setTabOrder(btn_add_new_data, cb_name_org);
+        QWidget::setTabOrder(cb_name_org, btn_add_update_data);
+        QWidget::setTabOrder(btn_add_update_data, cb_le_id_catridge);
+        QWidget::setTabOrder(cb_le_id_catridge, le_id_catridge);
+        QWidget::setTabOrder(le_id_catridge, update_txt_model_catridge);
+        QWidget::setTabOrder(update_txt_model_catridge, le_sn_catridge);
+        QWidget::setTabOrder(le_sn_catridge, update_data_remonta);
+        QWidget::setTabOrder(update_data_remonta, update_txt_commentarii);
+        QWidget::setTabOrder(update_txt_commentarii, update_txt_vip_rabot);
+        QWidget::setTabOrder(update_txt_vip_rabot, update_txt_zhalobi);
 
         retranslateUi(w_add_values);
 

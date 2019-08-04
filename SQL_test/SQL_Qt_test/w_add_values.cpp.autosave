@@ -88,8 +88,3 @@ bool w_add_values::getStatus(QLineEdit *edit)
     return !edit->text().isEmpty();
 }
 
-void w_add_values::changeEvent(QEvent *)
-{
-    qDebug() << "event";
-}
-
