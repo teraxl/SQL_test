@@ -24,13 +24,15 @@ SOURCES += \
         mainwindow.cpp \
     login.cpp \
     sqlquerydata.cpp \
-    w_add_values.cpp
+    w_add_values.cpp \
+    checkeditline.cpp
 
 HEADERS += \
         mainwindow.h \
     login.h \
     sqlquerydata.h \
-    w_add_values.h
+    w_add_values.h \
+    checkeditline.h
 
 FORMS += \
         mainwindow.ui \

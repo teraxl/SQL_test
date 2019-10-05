@@ -3,6 +3,7 @@ release/mainwindow.o
 release/login.o
 release/sqlquerydata.o
 release/w_add_values.o
+release/checkeditline.o
 release/qrc_resorces.o
 release/moc_mainwindow.o
 release/moc_login.o

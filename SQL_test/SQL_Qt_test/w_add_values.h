@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QDate>
 #include <QDateEdit>
+#include "checkeditline.h"
 
 class QLineEdit;
 class QPushButton;
@@ -27,12 +28,11 @@ private slots:
 
     void setBtnEnabled();
 
-    void setDateToWidget(const QString &text) const;
-
 private:
     Ui::w_add_values *ui;
 
 private:
+    CheckEditLine *ce;
     QLineEdit *nameOrg;
     QLineEdit *model;
     QLineEdit *id;

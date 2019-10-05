@@ -22,6 +22,8 @@ w_add_values::w_add_values(QWidget *parent) :
     this->setWindowModality(Qt::ApplicationModal);
     this->activateWindow();
 
+    ce = new CheckEditLine(this);
+
     nameOrg         = qobject_cast<QLineEdit*>(ui->txt_name_org);
     model           = qobject_cast<QLineEdit*>(ui->txt_model_catridge);
     id              = qobject_cast<QLineEdit*>(ui->txt_id_catridge);
@@ -40,22 +42,11 @@ w_add_values::w_add_values(QWidget *parent) :
     QCalendarWidget *cw = new QCalendarWidget();
     cw->setWindowModality(Qt::ApplicationModal);
 
-
-
-//    cw->showToday();
-
     nameOrg->addAction(action1);
     nameOrg->addAction(action2);
     nameOrg->setContextMenuPolicy(Qt::ActionsContextMenu);
 
     connect(dataRemonta, &QDateEdit::editingFinished, cw, &QCalendarWidget::show);
-    QObject *obj = new QObject(this);
-
-//    connect(this, &QObject::sender->object, )
-
-    timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &w_add_values::setBtnEnabled);\
-    timer->start(100);
 }
 
 w_add_values::~w_add_values()
@@ -65,6 +56,15 @@ w_add_values::~w_add_values()
 
 void w_add_values::on_btn_add_new_data_clicked()
 {
+    bool a = true;
+    bool b = true;
+    bool c = true;
+    bool d = true;
+    bool e = true;
+    bool f = true;
+    bool g = true;
+
+    qDebug() << ((a && b) && (c && d) && (e && f && g));
 
 }
 
@@ -78,18 +78,8 @@ void w_add_values::setBtnEnabled()
 
 }
 
-void w_add_values::setDateToWidget(const QString &text) const
-{
-
-}
-
 bool w_add_values::getStatus(QLineEdit *edit)
 {
     return !edit->text().isEmpty();
-}
-
-void w_add_values::changeEvent(QEvent *)
-{
-    qDebug() << "event";
 }
 
