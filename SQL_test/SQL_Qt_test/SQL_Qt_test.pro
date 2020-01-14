@@ -9,7 +9,6 @@
 QT += core gui sql axcontainer widgets
 #ICON = ":/icons/1024x1024bb.png"
 RC_FILE = resource.rc
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = SQL_Qt_test
 TEMPLATE = app
@@ -39,13 +38,11 @@ FORMS += \
     login.ui \
     w_add_values.ui
 
-#Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
 
-DESTDIR = ..\..\..\..\QtXLSDebug
-win32:QMAKE_POST_LINK += windeployqt --release $$OUT_PWD/$$DESTDIR
+win32 {
+    DESTDIR = ..\Release
+    QMAKE_POST_LINK += windeployqt --release $$OUT_PWD/$$DESTDIR
+}
 
 RESOURCES += \
     resorces.qrc
