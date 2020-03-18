@@ -1,0 +1,13 @@
+debug/main.o
+debug/mainwindow.o
+debug/login.o
+debug/sqlquerydata.o
+debug/w_add_values.o
+debug/checkeditline.o
+debug/App.o
+debug/qrc_resorces.o
+debug/moc_mainwindow.o
+debug/moc_login.o
+debug/moc_sqlquerydata.o
+debug/moc_w_add_values.o
+debug/moc_App.o

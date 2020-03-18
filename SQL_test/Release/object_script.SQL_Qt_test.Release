@@ -1,0 +1,13 @@
+release/main.o
+release/mainwindow.o
+release/login.o
+release/sqlquerydata.o
+release/w_add_values.o
+release/checkeditline.o
+release/App.o
+release/qrc_resorces.o
+release/moc_mainwindow.o
+release/moc_login.o
+release/moc_sqlquerydata.o
+release/moc_w_add_values.o
+release/moc_App.o

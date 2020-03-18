@@ -25,6 +25,10 @@ private slots:
 private:
     Ui::Login *ui;
     QSqlDatabase db;
+    QString serverName;
+    QString dbName;
+    QString userName;
+    QString userPassword;
 };
 
 #endif // LOGIN_H

@@ -18,14 +18,14 @@
     <widget class="QPushButton" name="pushButton">
      <property name="font">
       <font>
-       <family>System</family>
+       <family>Times New Roman</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="text">
-      <string>Connect to DB</string>
+      <string>Соединение...</string>
      </property>
     </widget>
    </item>
@@ -53,7 +53,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Adress server DB</string>
+      <string>Адрес БД</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -69,7 +69,7 @@
       </font>
      </property>
      <property name="text">
-      <string>DB Name</string>
+      <string>Имя БД</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -115,7 +115,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Login</string>
+      <string>Логин</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -146,7 +146,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Pasword</string>
+      <string>Пароль</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
