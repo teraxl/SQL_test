@@ -55,7 +55,7 @@ void Login::on_pushButton_clicked()
     db.setPassword(ui->lineEdit_4->text());
 
     if (db.open()){
-        mes->setText("Succes connect");
+        mes->setText("Соединение успешно");
     } else {
         mes->setText("Fail connected");
     }
