@@ -47,10 +47,13 @@ Login::~Login()
 
 void Login::on_pushButton_clicked()
 {
-    db = QSqlDatabase::addDatabase("QODBC");
-    db.setDatabaseName(QString("DRIVER={SQL Server};SERVER=%1;DATABASE=%2;")
-                       .arg(ui->lineEdit->text())
-                       .arg(ui->lineEdit_2->text()));
+//    For MS SQL Server
+//    db = QSqlDatabase::addDatabase("QODBC");
+//    db.setDatabaseName(QString("DRIVER={SQL Server};SERVER=%1;DATABASE=%2;")
+//                       .arg(ui->lineEdit->text())
+//                       .arg(ui->lineEdit_2->text()));
+    db = QSqlDatabase::addDatabase("QPSQL");
+    db.setDatabaseName(ui->lineEdit_2->text());
     db.setUserName(ui->lineEdit_3->text());
     db.setPassword(ui->lineEdit_4->text());
 

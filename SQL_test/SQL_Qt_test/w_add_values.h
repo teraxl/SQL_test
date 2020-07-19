@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QDate>
 #include <QDateEdit>
+#include <qcalendarwidget.h>
 #include "checkeditline.h"
 
 class QLineEdit;
@@ -45,6 +46,7 @@ private:
     QTimer *timer;
     bool getStatus(QLineEdit *edit);
     int count;
+    QCalendarWidget *calWidget;
 };
 
 #endif // W_ADD_VALUES_H

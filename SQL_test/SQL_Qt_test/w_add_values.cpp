@@ -31,6 +31,12 @@ w_add_values::w_add_values(QWidget *parent) :
     comments        = qobject_cast<QLineEdit*>(ui->txt_commentarii);
     btnAddData      = qobject_cast<QPushButton*>(ui->btn_add_new_data);
     dataRemonta     = qobject_cast<QDateEdit*>(ui->data_remonta);
+    calWidget = new QCalendarWidget();
+    calWidget->setGridVisible(true);
+    calWidget->setWindowFlags(Qt::Window | Qt::WindowCloseButtonHint);
+    calWidget->setWindowModality(Qt::ApplicationModal);
+
+    connect(dataRemonta, &QDateEdit::dateChanged, calWidget, &QCalendarWidget::show);
 }
 
 w_add_values::~w_add_values()

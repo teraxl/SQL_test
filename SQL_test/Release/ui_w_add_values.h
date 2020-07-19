@@ -587,8 +587,8 @@ public:
         label_5->setText(QApplication::translate("w_add_values", "\320\226\320\260\320\273\320\276\320\261\321\213 \321\201\320\276 \321\201\320\273\320\276\320\262 \320\272\320\273\320\270\320\265\320\275\321\202\320\260", nullptr));
         label_6->setText(QApplication::translate("w_add_values", "\320\232\320\276\320\274\320\274\320\265\320\275\321\202\320\260\321\200\320\270\320\270", nullptr));
         btn_add_new_data->setText(QApplication::translate("w_add_values", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\267\320\260\320\277\320\270\321\201\321\214", nullptr));
-        label_7->setText(QApplication::translate("w_add_values", "\320\224\320\260\321\202\320\260 \321\200\320\265\320\274\320\276\320\275\321\202\320\260", nullptr));
-        twAddData->setTabText(twAddData->indexOf(tabWidgetAddData), QApplication::translate("w_add_values", "\320\224\320\276\320\261\320\260\320\262\320\273\320\265\320\275\320\270\320\265 \320\264\320\260\320\275\320\275\321\213\321\205 \320\262 \320\221\320\224", nullptr));
+        label_7->setText(QApplication::translate("w_add_values", "\320\224\320\260\321\202\320\260 \320\277\321\200\320\270\321\205\320\276\320\264\320\260", nullptr));
+        twAddData->setTabText(twAddData->indexOf(tabWidgetAddData), QApplication::translate("w_add_values", "\320\224\320\276\320\261\320\260\320\262\320\273\320\265\320\275\320\270\320\265", nullptr));
         label_9->setText(QApplication::translate("w_add_values", "\320\235\320\260\320\270\320\274\320\265\320\275\320\276\320\262\320\260\320\275\320\270\320\265 \320\276\321\200\320\263\320\260\320\275\320\270\320\267\320\260\321\206\320\270\320\270", nullptr));
         label_10->setText(QApplication::translate("w_add_values", "ID \320\272\320\260\321\202\321\200\320\270\320\264\320\266\320\260", nullptr));
         label_11->setText(QApplication::translate("w_add_values", "\320\234\320\276\320\264\320\265\320\273\321\214 \320\272\320\260\321\202\321\200\320\270\320\264\320\266\320\260", nullptr));
@@ -598,7 +598,7 @@ public:
         label_14->setText(QApplication::translate("w_add_values", "\320\232\320\276\320\274\320\274\320\265\320\275\321\202\320\260\321\200\320\270\320\270", nullptr));
         btn_add_update_data->setText(QApplication::translate("w_add_values", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\267\320\260\320\277\320\270\321\201\321\214", nullptr));
         label_15->setText(QApplication::translate("w_add_values", "\320\224\320\260\321\202\320\260 \321\200\320\265\320\274\320\276\320\275\321\202\320\260", nullptr));
-        twAddData->setTabText(twAddData->indexOf(tabWidgetModify), QApplication::translate("w_add_values", "\320\236\320\261\320\275\320\276\320\262\320\273\320\265\320\275\320\270\320\265 \320\264\320\260\320\275\320\275\321\213\321\205 \320\262 \320\221\320\224", nullptr));
+        twAddData->setTabText(twAddData->indexOf(tabWidgetModify), QApplication::translate("w_add_values", "\320\240\320\265\320\274\320\276\320\275\321\202", nullptr));
     } // retranslateUi
 
 };

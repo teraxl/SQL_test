@@ -17,11 +17,11 @@
    <item row="0" column="0">
     <widget class="QTabWidget" name="twAddData">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tabWidgetAddData">
       <attribute name="title">
-       <string>Добавление данных в БД</string>
+       <string>Добавление</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
@@ -345,7 +345,7 @@
           </spacer>
          </item>
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5,1">
+          <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5,0,0">
            <property name="spacing">
             <number>5</number>
            </property>
@@ -377,7 +377,7 @@
               <set>Qt::ImhNone</set>
              </property>
              <property name="text">
-              <string>Дата ремонта</string>
+              <string>Дата прихода</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -385,7 +385,45 @@
             </widget>
            </item>
            <item>
-            <widget class="QDateEdit" name="data_remonta"/>
+            <widget class="QLabel" name="lbl_add_dataRemonta">
+             <property name="minimumSize">
+              <size>
+               <width>95</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>95</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="lineWidth">
+              <number>1</number>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="addDate">
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>+</string>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -395,7 +433,7 @@
      </widget>
      <widget class="QWidget" name="tabWidgetModify">
       <attribute name="title">
-       <string>Обновление данных в БД</string>
+       <string>Ремонт</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
@@ -748,7 +786,7 @@
           </spacer>
          </item>
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,5,1">
+          <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,5,0,0">
            <property name="spacing">
             <number>5</number>
            </property>
@@ -782,7 +820,53 @@
             </widget>
            </item>
            <item>
-            <widget class="QDateEdit" name="update_data_remonta"/>
+            <widget class="QLabel" name="label_update_date_remonta">
+             <property name="minimumSize">
+              <size>
+               <width>95</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>95</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="contextMenuPolicy">
+              <enum>Qt::NoContextMenu</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_update_date_remonta">
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>+</string>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -802,14 +886,12 @@
   <tabstop>txt_vip_rabot</tabstop>
   <tabstop>txt_zhalobi</tabstop>
   <tabstop>txt_commentarii</tabstop>
-  <tabstop>data_remonta</tabstop>
   <tabstop>btn_add_new_data</tabstop>
   <tabstop>cb_name_org</tabstop>
   <tabstop>btn_add_update_data</tabstop>
   <tabstop>le_id_catridge</tabstop>
   <tabstop>update_txt_model_catridge</tabstop>
   <tabstop>le_sn_catridge</tabstop>
-  <tabstop>update_data_remonta</tabstop>
   <tabstop>update_txt_commentarii</tabstop>
   <tabstop>update_txt_vip_rabot</tabstop>
   <tabstop>update_txt_zhalobi</tabstop>
