@@ -326,6 +326,7 @@ release/moc_mainwindow.cpp: ../SQL_Qt_test/mainwindow.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qdatetime.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QDateEdit \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qdatetimeedit.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qcalendarwidget.h \
 		../SQL_Qt_test/checkeditline.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QObject \
 		release/moc_predefs.h \
@@ -619,10 +620,13 @@ release/moc_w_add_values.cpp: ../SQL_Qt_test/w_add_values.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractspinbox.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qvalidator.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qregularexpression.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qcalendarwidget.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QLabel \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlabel.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qframe.h \
 		../SQL_Qt_test/checkeditline.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QObject \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlineedit.h \
-		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qframe.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qtextcursor.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qtextformat.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qpen.h \
@@ -743,6 +747,67 @@ release/moc_App.cpp: ../SQL_Qt_test/App.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qinputmethod.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QSettings \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qsettings.h \
+		../SQL_Qt_test/mainwindow.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QMainWindow \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtabwidget.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qicon.h \
+		../SQL_Qt_test/login.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QWidget \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/QSql \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/qtsqlglobal.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/qtsql-config.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/QSqlDatabase \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/qsqldatabase.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QMessageBox \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qmessagebox.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qdialog.h \
+		ui_login.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QVariant \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QGridLayout \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qgridlayout.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlayout.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlayoutitem.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qboxlayout.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QLabel \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlabel.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qframe.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QLineEdit \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlineedit.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qtextcursor.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qtextformat.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qpen.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qtextoption.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QPushButton \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qpushbutton.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QSpacerItem \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QTreeWidgetItem \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtreewidget.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtreeview.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractitemview.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qabstractitemmodel.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qitemselectionmodel.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractitemdelegate.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qstyleoption.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractspinbox.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qvalidator.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qregularexpression.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qslider.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractslider.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qstyle.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtabbar.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qrubberband.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtreewidgetitemiterator.h \
+		../SQL_Qt_test/w_add_values.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QDate \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qdatetime.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QDateEdit \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qdatetimeedit.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qcalendarwidget.h \
+		../SQL_Qt_test/checkeditline.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QObject \
 		release/moc_predefs.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/bin/moc.exe
 	E:\Qt\Qt_5_12_1\5.12.1\mingw73_64\bin\moc.exe $(DEFINES) --include E:/_DEVELOPER_/Github/SQL_test/SQL_test/Release/release/moc_predefs.h -IE:/Qt/Qt_5_12_1/5.12.1/mingw73_64/mkspecs/win32-g++ -IE:/_DEVELOPER_/Github/SQL_test/SQL_test/SQL_Qt_test -IE:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include -IE:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/ActiveQt -IE:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets -IE:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui -IE:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtANGLE -IE:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql -IE:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore -I. -IE:/Qt/Qt_5_12_1/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IE:/Qt/Qt_5_12_1/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IE:/Qt/Qt_5_12_1/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IE:/Qt/Qt_5_12_1/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IE:/Qt/Qt_5_12_1/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IE:/Qt/Qt_5_12_1/Tools/mingw730_64/x86_64-w64-mingw32/include ..\SQL_Qt_test\App.h -o release\moc_App.cpp
@@ -949,6 +1014,7 @@ release/main.o: ../SQL_Qt_test/main.cpp ../SQL_Qt_test/mainwindow.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qdatetime.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QDateEdit \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qdatetimeedit.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qcalendarwidget.h \
 		../SQL_Qt_test/checkeditline.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QObject \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QDebug \
@@ -1124,6 +1190,7 @@ release/mainwindow.o: ../SQL_Qt_test/mainwindow.cpp ../SQL_Qt_test/mainwindow.h 
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qdatetime.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QDateEdit \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qdatetimeedit.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qcalendarwidget.h \
 		../SQL_Qt_test/checkeditline.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QObject \
 		ui_mainwindow.h \
@@ -1512,7 +1579,48 @@ release/login.o: ../SQL_Qt_test/login.cpp ../SQL_Qt_test/login.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qicon.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QSpacerItem \
-		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QDebug
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QDebug \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/QSqlQuery \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/qsqlquery.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/QSqlRecord \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/qsqlrecord.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/QSqlError \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/qsqlerror.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/QSqlResult \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/qsqlresult.h \
+		../SQL_Qt_test/App.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QSettings \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qsettings.h \
+		../SQL_Qt_test/mainwindow.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QMainWindow \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtabwidget.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QTreeWidgetItem \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtreewidget.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtreeview.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractitemview.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qabstractitemmodel.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qitemselectionmodel.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractitemdelegate.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qstyleoption.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractspinbox.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qvalidator.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qregularexpression.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qslider.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractslider.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qstyle.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtabbar.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qrubberband.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtreewidgetitemiterator.h \
+		../SQL_Qt_test/w_add_values.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QDate \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qdatetime.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QDateEdit \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qdatetimeedit.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qcalendarwidget.h \
+		../SQL_Qt_test/checkeditline.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QObject
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\login.o ..\SQL_Qt_test\login.cpp
 
 release/sqlquerydata.o: ../SQL_Qt_test/sqlquerydata.cpp ../SQL_Qt_test/sqlquerydata.h \
@@ -1684,10 +1792,13 @@ release/w_add_values.o: ../SQL_Qt_test/w_add_values.cpp ../SQL_Qt_test/w_add_val
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractspinbox.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qvalidator.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qregularexpression.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qcalendarwidget.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QLabel \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlabel.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qframe.h \
 		../SQL_Qt_test/checkeditline.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QObject \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlineedit.h \
-		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qframe.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qtextcursor.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qtextformat.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qpen.h \
@@ -1719,8 +1830,6 @@ release/w_add_values.o: ../SQL_Qt_test/w_add_values.cpp ../SQL_Qt_test/w_add_val
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlayoutitem.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qboxlayout.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QHBoxLayout \
-		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QLabel \
-		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlabel.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QLineEdit \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QPushButton \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qpushbutton.h \
@@ -1740,8 +1849,8 @@ release/w_add_values.o: ../SQL_Qt_test/w_add_values.cpp ../SQL_Qt_test/w_add_val
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qaction.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qactiongroup.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QCalendarWidget \
-		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qcalendarwidget.h \
-		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QStyle
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QStyle \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/Qt
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\w_add_values.o ..\SQL_Qt_test\w_add_values.cpp
 
 release/checkeditline.o: ../SQL_Qt_test/checkeditline.cpp ../SQL_Qt_test/checkeditline.h \
@@ -1970,7 +2079,68 @@ release/App.o: ../SQL_Qt_test/App.cpp ../SQL_Qt_test/App.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qguiapplication.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qinputmethod.h \
 		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QSettings \
-		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qsettings.h
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qsettings.h \
+		../SQL_Qt_test/mainwindow.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QMainWindow \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtabwidget.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qicon.h \
+		../SQL_Qt_test/login.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QWidget \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/QSql \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/qtsqlglobal.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/qtsql-config.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/QSqlDatabase \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtSql/qsqldatabase.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QMessageBox \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qmessagebox.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qdialog.h \
+		ui_login.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QVariant \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QGridLayout \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qgridlayout.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlayout.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlayoutitem.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qboxlayout.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QLabel \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlabel.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qframe.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QLineEdit \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qlineedit.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qtextcursor.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qtextformat.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qpen.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qtextoption.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QPushButton \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qpushbutton.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QSpacerItem \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QTreeWidgetItem \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtreewidget.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtreeview.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractitemview.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qabstractitemmodel.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qitemselectionmodel.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractitemdelegate.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qstyleoption.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractspinbox.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtGui/qvalidator.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qregularexpression.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qslider.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qabstractslider.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qstyle.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtabbar.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qrubberband.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qtreewidgetitemiterator.h \
+		../SQL_Qt_test/w_add_values.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QDate \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/qdatetime.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/QDateEdit \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qdatetimeedit.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtWidgets/qcalendarwidget.h \
+		../SQL_Qt_test/checkeditline.h \
+		E:/Qt/Qt_5_12_1/5.12.1/mingw73_64/include/QtCore/QObject
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\App.o ..\SQL_Qt_test\App.cpp
 
 release/qrc_resorces.o: release/qrc_resorces.cpp 
