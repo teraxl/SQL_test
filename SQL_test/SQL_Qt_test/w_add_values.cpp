@@ -58,6 +58,7 @@ w_add_values::w_add_values(QWidget *parent) :
     qDebug() << dw->availableGeometry(this).size();
     qDebug() << dw->screenNumber(this);
 
+
     calWidgetU = new QCalendarWidget();
     calWidgetU->setGridVisible(true);
     calWidgetU->setWindowFlags(Qt::Dialog | Qt::WindowCloseButtonHint);
