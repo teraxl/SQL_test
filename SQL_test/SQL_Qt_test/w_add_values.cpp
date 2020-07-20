@@ -49,6 +49,7 @@ w_add_values::w_add_values(QWidget *parent) :
     calWidget->setWindowTitle("Enter date");
 
     connect(btn_add_date_remonta, &QPushButton::clicked, calWidget, &QCalendarWidget::show);
+    connect(calWidget, &QCalendarWidget::clicked, calWidget, &QCalendarWidget::close);
     connect(calWidget, &QCalendarWidget::clicked, this, &w_add_values::setDate);
 }
 
