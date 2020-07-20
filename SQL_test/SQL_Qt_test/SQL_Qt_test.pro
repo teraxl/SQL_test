@@ -42,7 +42,7 @@ FORMS += \
 
 
 win32 {
-    DESTDIR = ..\Release
+    DESTDIR = ../Release
     QMAKE_POST_LINK += windeployqt --release $$OUT_PWD/$$DESTDIR
 }
 
