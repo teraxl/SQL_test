@@ -15,6 +15,7 @@
 #include <QStringList>
 #include <QMetaProperty>
 #include <QSignalTransition>
+#include <QDesktopWidget>
 
 w_add_values::w_add_values(QWidget *parent) :
     QWidget(parent),
@@ -47,14 +48,19 @@ w_add_values::w_add_values(QWidget *parent) :
     lbl_update_data_remonta->setText(date);
 
     calWidgetA = new QCalendarWidget();
-    calWidgetA->setGridVisible(true);
-    calWidgetA->setWindowFlags(Qt::Window | Qt::WindowCloseButtonHint);
+    calWidgetA->setGridVisible(false);
+    calWidgetA->setWindowFlags(Qt::Dialog | Qt::WindowCloseButtonHint);
     calWidgetA->setWindowModality(Qt::ApplicationModal);
-    calWidgetA->setWindowTitle("Enter date");
+    calWidgetA->setWindowTitle("Выберите интересующюю вас дату");
+    calWidgetA->activateWindow();
+
+    QDesktopWidget *dw = new QDesktopWidget;
+    qDebug() << dw->availableGeometry(this).size();
+    qDebug() << dw->screenNumber(this);
 
     calWidgetU = new QCalendarWidget();
     calWidgetU->setGridVisible(true);
-    calWidgetU->setWindowFlags(Qt::Window | Qt::WindowCloseButtonHint);
+    calWidgetU->setWindowFlags(Qt::Dialog | Qt::WindowCloseButtonHint);
     calWidgetU->setWindowModality(Qt::ApplicationModal);
     calWidgetU->setWindowTitle("Выберите интересующюю вас дату");
 
