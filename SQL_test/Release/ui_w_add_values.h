@@ -12,7 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QComboBox>
-#include <QtWidgets/QDateEdit>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
@@ -63,7 +62,8 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *btn_add_new_data;
     QLabel *label_7;
-    QDateEdit *data_remonta;
+    QLabel *lbl_add_data_remonta;
+    QPushButton *btn_add_date_remonta;
     QWidget *tabWidgetModify;
     QGridLayout *gridLayout_2;
     QVBoxLayout *verticalLayout_20;
@@ -96,7 +96,8 @@ public:
     QHBoxLayout *horizontalLayout_4;
     QPushButton *btn_add_update_data;
     QLabel *label_15;
-    QDateEdit *update_data_remonta;
+    QLabel *lbl_update_data_remonta;
+    QPushButton *btn_update_data_remonta;
 
     void setupUi(QWidget *w_add_values)
     {
@@ -309,14 +310,30 @@ public:
 
         horizontalLayout->addWidget(label_7);
 
-        data_remonta = new QDateEdit(tabWidgetAddData);
-        data_remonta->setObjectName(QString::fromUtf8("data_remonta"));
+        lbl_add_data_remonta = new QLabel(tabWidgetAddData);
+        lbl_add_data_remonta->setObjectName(QString::fromUtf8("lbl_add_data_remonta"));
+        lbl_add_data_remonta->setMinimumSize(QSize(95, 20));
+        lbl_add_data_remonta->setMaximumSize(QSize(95, 20));
+        lbl_add_data_remonta->setFrameShape(QFrame::Panel);
+        lbl_add_data_remonta->setLineWidth(1);
+        lbl_add_data_remonta->setAlignment(Qt::AlignCenter);
 
-        horizontalLayout->addWidget(data_remonta);
+        horizontalLayout->addWidget(lbl_add_data_remonta);
+
+        btn_add_date_remonta = new QPushButton(tabWidgetAddData);
+        btn_add_date_remonta->setObjectName(QString::fromUtf8("btn_add_date_remonta"));
+        btn_add_date_remonta->setMinimumSize(QSize(20, 20));
+        btn_add_date_remonta->setMaximumSize(QSize(20, 20));
+        QFont font;
+        font.setPointSize(13);
+        font.setBold(true);
+        font.setWeight(75);
+        btn_add_date_remonta->setFont(font);
+
+        horizontalLayout->addWidget(btn_add_date_remonta);
 
         horizontalLayout->setStretch(0, 1);
         horizontalLayout->setStretch(1, 5);
-        horizontalLayout->setStretch(2, 1);
 
         verticalLayout_10->addLayout(horizontalLayout);
 
@@ -530,14 +547,29 @@ public:
 
         horizontalLayout_4->addWidget(label_15);
 
-        update_data_remonta = new QDateEdit(tabWidgetModify);
-        update_data_remonta->setObjectName(QString::fromUtf8("update_data_remonta"));
+        lbl_update_data_remonta = new QLabel(tabWidgetModify);
+        lbl_update_data_remonta->setObjectName(QString::fromUtf8("lbl_update_data_remonta"));
+        lbl_update_data_remonta->setMinimumSize(QSize(95, 20));
+        lbl_update_data_remonta->setMaximumSize(QSize(95, 20));
+        QFont font1;
+        font1.setKerning(true);
+        lbl_update_data_remonta->setFont(font1);
+        lbl_update_data_remonta->setContextMenuPolicy(Qt::NoContextMenu);
+        lbl_update_data_remonta->setFrameShape(QFrame::Panel);
+        lbl_update_data_remonta->setAlignment(Qt::AlignCenter);
 
-        horizontalLayout_4->addWidget(update_data_remonta);
+        horizontalLayout_4->addWidget(lbl_update_data_remonta);
+
+        btn_update_data_remonta = new QPushButton(tabWidgetModify);
+        btn_update_data_remonta->setObjectName(QString::fromUtf8("btn_update_data_remonta"));
+        btn_update_data_remonta->setMinimumSize(QSize(20, 20));
+        btn_update_data_remonta->setMaximumSize(QSize(20, 20));
+        btn_update_data_remonta->setFont(font);
+
+        horizontalLayout_4->addWidget(btn_update_data_remonta);
 
         horizontalLayout_4->setStretch(0, 1);
         horizontalLayout_4->setStretch(1, 5);
-        horizontalLayout_4->setStretch(2, 1);
 
         verticalLayout_20->addLayout(horizontalLayout_4);
 
@@ -556,21 +588,19 @@ public:
         QWidget::setTabOrder(txt_sn, txt_vip_rabot);
         QWidget::setTabOrder(txt_vip_rabot, txt_zhalobi);
         QWidget::setTabOrder(txt_zhalobi, txt_commentarii);
-        QWidget::setTabOrder(txt_commentarii, data_remonta);
-        QWidget::setTabOrder(data_remonta, btn_add_new_data);
+        QWidget::setTabOrder(txt_commentarii, btn_add_new_data);
         QWidget::setTabOrder(btn_add_new_data, cb_name_org);
         QWidget::setTabOrder(cb_name_org, btn_add_update_data);
         QWidget::setTabOrder(btn_add_update_data, le_id_catridge);
         QWidget::setTabOrder(le_id_catridge, update_txt_model_catridge);
         QWidget::setTabOrder(update_txt_model_catridge, le_sn_catridge);
-        QWidget::setTabOrder(le_sn_catridge, update_data_remonta);
-        QWidget::setTabOrder(update_data_remonta, update_txt_commentarii);
+        QWidget::setTabOrder(le_sn_catridge, update_txt_commentarii);
         QWidget::setTabOrder(update_txt_commentarii, update_txt_vip_rabot);
         QWidget::setTabOrder(update_txt_vip_rabot, update_txt_zhalobi);
 
         retranslateUi(w_add_values);
 
-        twAddData->setCurrentIndex(0);
+        twAddData->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(w_add_values);
@@ -588,6 +618,8 @@ public:
         label_6->setText(QApplication::translate("w_add_values", "\320\232\320\276\320\274\320\274\320\265\320\275\321\202\320\260\321\200\320\270\320\270", nullptr));
         btn_add_new_data->setText(QApplication::translate("w_add_values", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\267\320\260\320\277\320\270\321\201\321\214", nullptr));
         label_7->setText(QApplication::translate("w_add_values", "\320\224\320\260\321\202\320\260 \320\277\321\200\320\270\321\205\320\276\320\264\320\260", nullptr));
+        lbl_add_data_remonta->setText(QString());
+        btn_add_date_remonta->setText(QApplication::translate("w_add_values", "+", nullptr));
         twAddData->setTabText(twAddData->indexOf(tabWidgetAddData), QApplication::translate("w_add_values", "\320\224\320\276\320\261\320\260\320\262\320\273\320\265\320\275\320\270\320\265", nullptr));
         label_9->setText(QApplication::translate("w_add_values", "\320\235\320\260\320\270\320\274\320\265\320\275\320\276\320\262\320\260\320\275\320\270\320\265 \320\276\321\200\320\263\320\260\320\275\320\270\320\267\320\260\321\206\320\270\320\270", nullptr));
         label_10->setText(QApplication::translate("w_add_values", "ID \320\272\320\260\321\202\321\200\320\270\320\264\320\266\320\260", nullptr));
@@ -598,6 +630,8 @@ public:
         label_14->setText(QApplication::translate("w_add_values", "\320\232\320\276\320\274\320\274\320\265\320\275\321\202\320\260\321\200\320\270\320\270", nullptr));
         btn_add_update_data->setText(QApplication::translate("w_add_values", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\267\320\260\320\277\320\270\321\201\321\214", nullptr));
         label_15->setText(QApplication::translate("w_add_values", "\320\224\320\260\321\202\320\260 \321\200\320\265\320\274\320\276\320\275\321\202\320\260", nullptr));
+        lbl_update_data_remonta->setText(QString());
+        btn_update_data_remonta->setText(QApplication::translate("w_add_values", "+", nullptr));
         twAddData->setTabText(twAddData->indexOf(tabWidgetModify), QApplication::translate("w_add_values", "\320\240\320\265\320\274\320\276\320\275\321\202", nullptr));
     } // retranslateUi
 

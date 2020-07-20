@@ -8,7 +8,9 @@
 #include <QAction>
 #include <QCalendarWidget>
 #include <QDateEdit>
+#include <QDate>
 #include <QStyle>
+#include <Qt>
 
 w_add_values::w_add_values(QWidget *parent) :
     QWidget(parent),
@@ -29,14 +31,25 @@ w_add_values::w_add_values(QWidget *parent) :
     completeWork    = qobject_cast<QLineEdit*>(ui->txt_vip_rabot);
     zhalobi         = qobject_cast<QLineEdit*>(ui->txt_zhalobi);
     comments        = qobject_cast<QLineEdit*>(ui->txt_commentarii);
-    btnAddData      = qobject_cast<QPushButton*>(ui->btn_add_new_data);
-    dataRemonta     = qobject_cast<QDateEdit*>(ui->data_remonta);
+    lbl_add_data_remonta = qobject_cast<QLabel*>(ui->lbl_add_data_remonta);
+    lbl_update_data_remonta = qobject_cast<QLabel*>(ui->lbl_update_data_remonta);
+    btn_add_date_remonta = qobject_cast<QPushButton*>(ui->btn_add_date_remonta);
+    btn_update_data_remonta = qobject_cast<QPushButton*>(ui->btn_update_data_remonta);
+
+    QDate currentDate = QDate::currentDate();
+    QString date = currentDate.toString("dd.MM.yyyy");
+
+    lbl_add_data_remonta->setText(date);
+    lbl_update_data_remonta->setText(date);
+
     calWidget = new QCalendarWidget();
     calWidget->setGridVisible(true);
     calWidget->setWindowFlags(Qt::Window | Qt::WindowCloseButtonHint);
     calWidget->setWindowModality(Qt::ApplicationModal);
+    calWidget->setWindowTitle("Enter date");
 
-    connect(dataRemonta, &QDateEdit::dateChanged, calWidget, &QCalendarWidget::show);
+    connect(btn_add_date_remonta, &QPushButton::clicked, calWidget, &QCalendarWidget::show);
+    connect(calWidget, &QCalendarWidget::clicked, this, &w_add_values::setDate);
 }
 
 w_add_values::~w_add_values()
@@ -57,6 +70,11 @@ void w_add_values::on_btn_add_update_data_clicked()
 void w_add_values::setBtnEnabled()
 {
 
+}
+
+void w_add_values::setDate(const QDate &date)
+{
+    lbl_add_data_remonta->setText(date.toString("dd.MM.yyyy"));
 }
 
 bool w_add_values::getStatus(QLineEdit *edit)

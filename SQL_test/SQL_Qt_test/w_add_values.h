@@ -5,6 +5,7 @@
 #include <QDate>
 #include <QDateEdit>
 #include <qcalendarwidget.h>
+#include <QLabel>
 #include "checkeditline.h"
 
 class QLineEdit;
@@ -29,6 +30,8 @@ private slots:
 
     void setBtnEnabled();
 
+    void setDate(const QDate &date);
+
 private:
     Ui::w_add_values *ui;
 
@@ -41,8 +44,10 @@ private:
     QLineEdit *completeWork;
     QLineEdit *zhalobi;
     QLineEdit *comments;
-    QPushButton *btnAddData;
-    QDateEdit *dataRemonta;
+    QPushButton *btn_add_date_remonta;
+    QPushButton *btn_update_data_remonta;
+    QLabel *lbl_add_data_remonta;
+    QLabel *lbl_update_data_remonta;
     QTimer *timer;
     bool getStatus(QLineEdit *edit);
     int count;

@@ -17,7 +17,7 @@
    <item row="0" column="0">
     <widget class="QTabWidget" name="twAddData">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tabWidgetAddData">
       <attribute name="title">
@@ -385,7 +385,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="lbl_add_dataRemonta">
+            <widget class="QLabel" name="lbl_add_data_remonta">
              <property name="minimumSize">
               <size>
                <width>95</width>
@@ -397,6 +397,9 @@
                <width>95</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Panel</enum>
              </property>
              <property name="lineWidth">
               <number>1</number>
@@ -404,10 +407,13 @@
              <property name="text">
               <string/>
              </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="addDate">
+            <widget class="QPushButton" name="btn_add_date_remonta">
              <property name="minimumSize">
               <size>
                <width>20</width>
@@ -419,6 +425,13 @@
                <width>20</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
              </property>
              <property name="text">
               <string>+</string>
@@ -820,7 +833,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="label_update_date_remonta">
+            <widget class="QLabel" name="lbl_update_data_remonta">
              <property name="minimumSize">
               <size>
                <width>95</width>
@@ -841,6 +854,9 @@
              <property name="contextMenuPolicy">
               <enum>Qt::NoContextMenu</enum>
              </property>
+             <property name="frameShape">
+              <enum>QFrame::Panel</enum>
+             </property>
              <property name="text">
               <string/>
              </property>
@@ -850,7 +866,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="btn_update_date_remonta">
+            <widget class="QPushButton" name="btn_update_data_remonta">
              <property name="minimumSize">
               <size>
                <width>20</width>
@@ -862,6 +878,13 @@
                <width>20</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
              </property>
              <property name="text">
               <string>+</string>
