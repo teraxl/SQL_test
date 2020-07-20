@@ -10,7 +10,11 @@
 #include <QDateEdit>
 #include <QDate>
 #include <QStyle>
-#include <Qt>
+
+#include <QMetaObject>
+#include <QStringList>
+#include <QMetaProperty>
+#include <QSignalTransition>
 
 w_add_values::w_add_values(QWidget *parent) :
     QWidget(parent),
@@ -42,15 +46,24 @@ w_add_values::w_add_values(QWidget *parent) :
     lbl_add_data_remonta->setText(date);
     lbl_update_data_remonta->setText(date);
 
-    calWidget = new QCalendarWidget();
-    calWidget->setGridVisible(true);
-    calWidget->setWindowFlags(Qt::Window | Qt::WindowCloseButtonHint);
-    calWidget->setWindowModality(Qt::ApplicationModal);
-    calWidget->setWindowTitle("Enter date");
+    calWidgetA = new QCalendarWidget();
+    calWidgetA->setGridVisible(true);
+    calWidgetA->setWindowFlags(Qt::Window | Qt::WindowCloseButtonHint);
+    calWidgetA->setWindowModality(Qt::ApplicationModal);
+    calWidgetA->setWindowTitle("Enter date");
 
-    connect(btn_add_date_remonta, &QPushButton::clicked, calWidget, &QCalendarWidget::show);
-    connect(calWidget, &QCalendarWidget::clicked, calWidget, &QCalendarWidget::close);
-    connect(calWidget, &QCalendarWidget::clicked, this, &w_add_values::setDate);
+    calWidgetU = new QCalendarWidget();
+    calWidgetU->setGridVisible(true);
+    calWidgetU->setWindowFlags(Qt::Window | Qt::WindowCloseButtonHint);
+    calWidgetU->setWindowModality(Qt::ApplicationModal);
+    calWidgetU->setWindowTitle("Выберите интересующюю вас дату");
+
+    connect(btn_add_date_remonta, &QPushButton::clicked, calWidgetA, &QCalendarWidget::show);
+    connect(btn_update_data_remonta, &QPushButton::clicked, calWidgetU, &QCalendarWidget::show);
+    connect(calWidgetA, &QCalendarWidget::clicked, calWidgetA, &QCalendarWidget::close);
+    connect(calWidgetU, &QCalendarWidget::clicked, calWidgetU, &QCalendarWidget::close);
+    connect(calWidgetA, &QCalendarWidget::clicked, this, &w_add_values::setDateA);
+    connect(calWidgetU, &QCalendarWidget::clicked, this, &w_add_values::setDateU);
 }
 
 w_add_values::~w_add_values()
@@ -73,7 +86,12 @@ void w_add_values::setBtnEnabled()
 
 }
 
-void w_add_values::setDate(const QDate &date)
+void w_add_values::setDateU(const QDate &date)
+{
+    lbl_update_data_remonta->setText(date.toString("dd.MM.yyyy"));
+}
+
+void w_add_values::setDateA(const QDate &date)
 {
     lbl_add_data_remonta->setText(date.toString("dd.MM.yyyy"));
 }

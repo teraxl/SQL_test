@@ -25,12 +25,10 @@ public:
 
 private slots:
     void on_btn_add_new_data_clicked();
-
     void on_btn_add_update_data_clicked();
-
     void setBtnEnabled();
-
-    void setDate(const QDate &date);
+    void setDateA(const QDate &date);
+    void setDateU(const QDate &date);
 
 private:
     Ui::w_add_values *ui;
@@ -51,7 +49,8 @@ private:
     QTimer *timer;
     bool getStatus(QLineEdit *edit);
     int count;
-    QCalendarWidget *calWidget;
+    QCalendarWidget *calWidgetA;
+    QCalendarWidget *calWidgetU;
 };
 
 #endif // W_ADD_VALUES_H
